@@ -18,14 +18,10 @@ dist/
 .vscode/
 *.swp
 
-# Datasets - Rất quan trọng, không đẩy dữ liệu lên Git
-*.csv
-*.txt
-*.dat
-*.npz
-*.gz
-data/
-datasets/
+# Datasets - Do not commit raw data files
+# We specify the top-level data folder to avoid ignoring python source code
+# in quantumfed/data
+/data/
 
 # Jupyter Notebook
 .ipynb_checkpoints
